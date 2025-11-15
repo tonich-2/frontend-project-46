@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "[![Actions Status](https://github.com/tonich-2/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/tonich-2/frontend-project-46/actions)",
+  "bin": {
+  "gendiff": "bin/gendiff.js"
+},
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Arzamastsev <tonich@sbor.net>",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/create-config": "^1.11.0",
+    "@eslint/js": "^9.39.1",
+    "@stylistic/eslint-plugin": "^5.5.0",
+    "commander": "^14.0.2",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0"
+  }
+}
