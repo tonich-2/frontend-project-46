@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import { program } from 'commander'
+import parse from '../src/parsing.js'
 
 /* const command = () => {
   console.log('Hello, World!')
@@ -12,7 +13,8 @@ program
   .version('1.0.0')
   .option('-f, --format [type]', 'output format')
   .arguments('<filepath1> <filepath2>')
-//  .action(command)
+  .action((filepath1, filepath2) => {
+    parse(filepath1)
+    parse(filepath2)
+  })
   .parse(process.argv)
-
-program()
