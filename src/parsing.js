@@ -8,12 +8,12 @@ const parse = (file) => {
   // console.log(extension)
   if (extension === 'json') {
     const parsing = JSON.parse(content)
-    console.log(parsing) // temporary debugging printing
+    // console.log(parsing)
     return parsing
   }
   else if (extension === 'yaml') {
     const parsing = YAML.parse(content)
-    console.log(parsing) // temporary debugging printing
+    // console.log(parsing)
     return parsing
   }
   throw new Error('Unsupported extension. Only json and yaml files are supported.')
